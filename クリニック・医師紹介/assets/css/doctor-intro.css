@@ -1,0 +1,1062 @@
+main {
+  width: 100%;
+}
+/* ----- FV  ----- */
+.fv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/fv/hero-bg.png") no-repeat center / cover;
+}
+.hero p {
+  font-size: 46px;
+  color: #ffffff;
+}
+.fv .side-bar {
+  width: 100%;
+  max-width: 1100px;
+  padding-block: 16px;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+.fv .side-bar a {
+}
+.fv .hero-txt {
+  width: 100%;
+  max-width: 1100px;
+  padding-block: 48px;
+  font-size: 18px;
+  text-align: center;
+}
+.hero-ad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3894df 0%, #62c097 100%);
+  z-index: 2;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.hero-ad p:nth-of-type(1) {
+  color: #519bb3;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 154px;
+  padding-block: 3px;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.hero-ad p:nth-of-type(2) {
+  font-family: "Zen Old Mincho";
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+.hero-ad p:nth-of-type(3) {
+  font-size: 15px;
+}
+.more-btn {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #519bb3;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.time-table {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.time-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border: 2px solid #60b5ba;
+}
+
+.time-table thead th {
+  padding-block: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Gradient header */
+.time-table thead tr {
+  background: linear-gradient(135deg, #3894df 0%, #62c097 100%);
+}
+
+.time-table tbody tr:nth-of-type(1) {
+  border-bottom: 1px solid #4691aa;
+}
+
+.time-table tbody td {
+  padding-block: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Dot (○) */
+.dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #4691aa;
+  border-radius: 50%;
+}
+
+/* Triangle (▲) */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 14px solid #4691aa;
+  display: inline-block;
+}
+
+.time-table tbody td {
+  color: #4691aa;
+  font-size: 16px;
+  font-weight: 500;
+}
+.time-txt {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #519bb3;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 11px;
+}
+.info-item p:nth-of-type(1) {
+  font-size: 16px;
+  color: #ffffff;
+  width: 80px;
+  min-width: 80px;
+  padding-block: 3px;
+  text-align: center;
+  height: fit-content;
+  border-radius: 100px;
+  background: linear-gradient(135deg, #3894df 0%, #62c097 100%);
+}
+.info-item p:nth-of-type(3) {
+  font-size: 18px;
+  font-weight: 500;
+  color: #519bb3;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* --- Floating btns --- */
+/* .floating {
+  position: fixed;
+  top: 17px;
+  right: 0;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 999;
+}
+.floating.show {
+  opacity: 1;
+}
+.floating a {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+.floating a img {
+  width: 30px;
+}
+.floating a:nth-of-type(1) {
+  background-color: #3894df;
+  border-top-left-radius: 10px;
+}
+.floating a:nth-of-type(2) {
+  background-color: #62c097;
+  border-bottom-left-radius: 10px;
+} */
+@media (max-width: 1100px) {
+  .fv .hero-txt {
+    padding-inline: 16px;
+  }
+  .fv .side-bar {
+    padding-inline: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-item {
+    justify-content: center;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+  .fv .side-bar {
+    padding-block: 11px;
+  }
+  .fv .hero-txt {
+    padding-block: 20px;
+    text-align: start;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    padding: 5px 94px 5px 9px;
+  }
+  .fv .hero {
+    height: 120px;
+  }
+  .hero-ad {
+    display: none;
+  }
+}
+
+/* ----- IMG SLIDER  ----- */
+.img-slider {
+  width: 100%;
+}
+.img-slider .imgs {
+  display: flex;
+  gap: 40px;
+  padding-left: 35px;
+  overflow-x: scroll;
+  padding-block: 40px;
+}
+.img-slider .imgs img {
+  width: 430px;
+}
+
+@media (max-width: 768px) {
+  .img-slider .imgs {
+    padding-left: 16px;
+  }
+  .img-slider .imgs img {
+    width: 260px;
+  }
+}
+
+/* ----- CLINIC INFO ----- */
+.clinic-info {
+  width: 100%;
+  padding-block: 24px 40px;
+}
+.clinic-table {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 36px;
+  font-size: 22px;
+  color: #555;
+}
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-block: 8px 10px;
+  border-bottom: 1px solid #d3d3d3;
+  gap: 20px;
+}
+.row::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 160px;
+  height: 1px;
+  background-color: #60b5ba;
+}
+.label {
+  width: 160px;
+  color: #519bb3;
+  font-weight: 600;
+  text-align: center;
+}
+.value {
+  flex: 1;
+  line-height: 1.7;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .clinic-info {
+    padding-block: 24px;
+  }
+  .clinic-table {
+    max-width: 360px;
+    font-size: 20px;
+    margin-top: 23px;
+  }
+  .row {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+    padding-block: 0;
+    border-bottom: none;
+    margin-bottom: 10px;
+  }
+  .row::before {
+    display: none;
+  }
+
+  .label {
+    padding-inline: 10px;
+    padding-block: 6px 8px;
+    width: 100%;
+    text-align: start;
+    font-size: 18px;
+    position: relative;
+  }
+  .label::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #60b5ba;
+  }
+  .value {
+    font-size: 16px;
+  }
+}
+
+/* ----- CLINIC TIME ----- */
+.clinic-time {
+  width: 100%;
+  padding-block: 34px;
+}
+.clinic-time .time-table {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 36px;
+}
+.clinic-time .time-table thead th {
+  font-size: 26px;
+}
+.clinic-time .time-table tbody td {
+  font-size: 26px;
+}
+.clinic-time .time-table .dot {
+  width: 20px;
+  height: 20px;
+}
+.clinic-time .time-table .triangle {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #4691aa;
+}
+.clinic-time .txt {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 17px;
+}
+@media (max-width: 768px) {
+  .clinic-time .time-table {
+    max-width: 360px;
+    margin-top: 29px;
+  }
+  .clinic-time .time-table thead th {
+    font-size: 16px;
+  }
+  .clinic-time .time-table tbody td {
+    font-size: 16px;
+  }
+  .clinic-time .time-table .dot {
+    width: 14px;
+    height: 14px;
+  }
+  .clinic-time .time-table .triangle {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid #4691aa;
+  }
+  .clinic-time .txt {
+    margin-top: 29px;
+  }
+}
+/* ----- CLINIC MAP ----- */
+.clinic-map {
+  width: 100%;
+  padding-block: 34px;
+}
+.clinic-map .map-box {
+  width: 100%;
+  max-width: 1100px;
+  margin: 29px auto;
+  font-size: 20px;
+  text-align: center;
+}
+.clinic-map .map-box iframe {
+  height: 500px;
+  margin-top: 29px;
+}
+@media (max-width: 768px) {
+  .clinic-map .map-box iframe {
+    height: 290px;
+    margin-top: 32px;
+  }
+}
+
+/* ----- CLINIC GALLERY ----- */
+.clinic-gallery {
+  width: 100%;
+  padding-block: 36px 54px;
+}
+.clinic-gallery .gallery {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: auto;
+  margin-top: 37px;
+  font-size: 18px;
+}
+.clinic-gallery .gallery img {
+  width: 350px;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+@media (max-width: 1100px) {
+  .clinic-gallery .gallery {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .clinic-gallery {
+    padding-block: 36px;
+  }
+  .clinic-gallery .gallery {
+    gap: 48px;
+  }
+}
+/* ----- CLINIC INTRO ----- */
+.clinic-intro {
+  width: 100%;
+  background-color: #eef5f6;
+  padding-block: 44px 46px;
+}
+.clinic-intro .container {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+}
+.clinic-intro .container .intro-top {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  margin-bottom: 38px;
+}
+.clinic-intro .container .intro-top img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 5px;
+}
+.clinic-intro .container .intro-txt p:nth-of-type(1) {
+  font-size: 32px;
+  font-family: "Zen Old Mincho";
+  margin-bottom: 22px;
+}
+.clinic-intro .container .intro-txt p:nth-of-type(2) {
+  font-size: 18px;
+
+  span {
+    color: #519bb3;
+  }
+}
+.clinic-intro .container .intro-btm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 26px;
+}
+.clinic-intro .container .intro-btm .item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 13px;
+  width: 100%;
+  max-width: 540px;
+  gap: 21px;
+  position: relative;
+  border: 1px solid #60b5ba;
+  box-shadow: 0px 4px 4px rgba(96, 181, 186, 0.25);
+}
+.clinic-intro .container .intro-btm .item p {
+  font-size: 32px;
+  color: #519bb3;
+
+  span {
+    font-size: 16px;
+    line-height: 0.5;
+  }
+}
+.clinic-intro .container .intro-btm .item img:nth-of-type(1) {
+  width: 170px;
+}
+.clinic-intro .container .intro-btm .item img:nth-of-type(2) {
+  width: 40px;
+  position: absolute;
+  right: 13px;
+}
+.btwn-tip {
+  background: linear-gradient(135deg, #3894df 0%, #62c097 100%);
+  padding: 5px 20px;
+  border-radius: 100px;
+  width: fit-content;
+  font-size: 20px;
+  color: #ffffff;
+  margin: auto;
+}
+
+@media (max-width: 1100px) {
+  .clinic-intro .container .intro-top img {
+    max-width: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .clinic-intro {
+    padding-block: 0px 38px;
+  }
+  .clinic-intro .container .intro-top img {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  .clinic-intro .container .intro-top {
+    flex-direction: column;
+    gap: 0;
+  }
+  .clinic-intro .container .intro-top .intro-txt {
+    margin-top: -164px;
+  }
+  .clinic-intro .container .intro-txt p:nth-of-type(1) {
+    text-align: center;
+    margin-bottom: 52px;
+    font-size: 26px;
+    color: #ffffff;
+  }
+  .clinic-intro .container .intro-txt p:nth-of-type(2) {
+    width: 360px;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 26px 25px;
+    box-shadow: 0px 4px 4px rgba(96, 181, 186, 0.25);
+  }
+  .clinic-intro .container .intro-btm {
+    margin-top: 30px;
+    padding-inline: 16px;
+    gap: 30px;
+  }
+  .clinic-intro .container .intro-btm .item {
+    align-items: flex-start;
+    gap: 13px;
+  }
+  .clinic-intro .container .intro-btm .item p {
+    padding-top: 8px;
+    font-size: 22px;
+  }
+  .clinic-intro .container .intro-btm .item img:nth-of-type(2) {
+    width: 30px;
+    right: 13px;
+    bottom: 17px;
+  }
+}
+
+/* ----- DCOTOR  ----- */
+.doctor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 34px 51px;
+}
+.doctor-moto {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  font-size: 40px;
+  margin-bottom: 84px;
+
+  p {
+    font-family: "Zen Old Mincho";
+  }
+}
+.doctor-moto img {
+  width: 100%;
+  max-width: 480px;
+}
+.doctor-intro {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  margin-top: 53px;
+  margin-bottom: 87px;
+  gap: 72px;
+}
+.doctor-intro .txt {
+  width: 100%;
+  max-width: 632px;
+  font-size: 18px;
+}
+.doctorinfo {
+  margin-bottom: 48px;
+  font-size: 20px;
+
+  span {
+    font-size: 32px;
+    margin-left: 10px;
+  }
+}
+.doctor-photo {
+  position: relative;
+  width: 100%;
+  max-width: 396px;
+}
+.doctor-photo img:nth-of-type(1) {
+  width: 100%;
+  max-width: 373px;
+}
+.doctor-photo img:nth-of-type(2) {
+  position: absolute;
+  width: 100%;
+  max-width: 373px;
+  top: 24px;
+  left: 23px;
+  z-index: -1;
+}
+.doctor .career-role {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1100px;
+}
+.doctor .role {
+  width: 100%;
+  max-width: 536px;
+  background-color: #fafafa;
+  padding-block: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.doctor .role-tip {
+  width: fit-content;
+  min-width: 280px;
+  text-align: center;
+  background: linear-gradient(135deg, #3894df 0%, #62c097 100%);
+  font-size: 18px;
+  padding: 7px 59px;
+  color: #ffffff;
+  border-radius: 100px;
+}
+.doctor .role .ul-group {
+  display: flex;
+  gap: 9px;
+}
+.doctor .role .ul-group ul {
+  min-width: 280px;
+  font-size: 18px;
+}
+.doctor .role .ul-group ul li {
+  list-style-type: disc;
+  line-height: 2;
+}
+.doctor .role:nth-of-type(1) .ul-group ul li {
+  list-style: none;
+}
+.doctor .more {
+  font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+  .doctor-intro {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .doctor {
+    padding-block: 34px 20px;
+  }
+  .doctor-moto {
+    flex-direction: column;
+    position: relative;
+  }
+  .doctor-moto img {
+    max-width: 100%;
+  }
+  .doctor-moto p {
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    font-size: 26px;
+  }
+  .doctor-intro {
+    flex-direction: column-reverse;
+    gap: 25px;
+    margin-top: 21px;
+    margin-bottom: 34px;
+  }
+  .doctor-intro .txt {
+    max-width: 100%;
+    padding-inline: 16px;
+  }
+  .doctor-photo img:nth-of-type(1) {
+    max-width: 320px;
+    margin-bottom: 46px;
+  }
+  .doctor-photo img:nth-of-type(2) {
+    max-width: 320px;
+    top: 21px;
+    left: 20px;
+  }
+  .doctor-photo {
+    margin: auto;
+    width: unset;
+    max-width: none;
+  }
+  .doctorinfo {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .doctor .career-role {
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+  }
+  .doctor .role {
+    max-width: 360px;
+    gap: 12px;
+  }
+  .doctor .role .ul-group {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
+/* ----- DOCTOR BACKGROUND  ----- */
+.doctor-bg {
+  width: 100%;
+  background-color: #eef5f6;
+  padding-block: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 58px;
+}
+.doctor-bg .item {
+  width: 100%;
+  max-width: 1100px;
+}
+.doctor-bg .item h2 {
+  font-size: 40px;
+  font-family: "Zen Old Mincho";
+  margin-bottom: 31px;
+  font-weight: normal;
+  text-align: center;
+}
+.doctor-bg .item-content {
+  display: flex;
+  align-items: start;
+  gap: 41px;
+}
+.doctor-bg .item-content img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+.doctor-bg .item-content p {
+  font-size: 18px;
+  width: 100%;
+  max-width: 579px;
+}
+
+@media (max-width: 768px) {
+  .doctor-bg {
+    gap: 44px;
+  }
+  .doctor-bg .item-content {
+    flex-direction: column;
+    gap: 35px;
+  }
+  .doctor-bg .img-box {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+  .doctor-bg .item-content img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .doctor-bg .img-box.dir-reverse {
+    justify-content: right;
+
+    img {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+  }
+  .doctor-bg .img-box h2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+  .doctor-bg .item-content p {
+    margin: auto;
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .doctor-bg .item-content img {
+    max-width: 310px;
+  }
+  .doctor-bg .item-content p {
+    max-width: 360px;
+  }
+}
+
+/* ----- MOTO  ----- */
+.moto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 44px 75px;
+}
+.moto .moto-ad {
+  display: flex;
+  align-items: center;
+  gap: 66px;
+}
+.moto .moto-ad img {
+  width: 349px;
+}
+.moto .moto-ad .moto-ad-content .item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+}
+.moto .moto-ad .moto-ad-content .item:nth-of-type(1) {
+  margin-bottom: 22px;
+}
+.moto .moto-ad .moto-ad-content .item .tip {
+  width: 90px;
+  height: 90px;
+  background-color: #eef5f6;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #519bb3;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 24px;
+    font-family: "Zen Old Mincho";
+  }
+}
+.moto .clinic-table {
+  margin-top: 45px;
+  font-size: 18px;
+}
+.moto .clinic-table .label {
+  font-size: 22px;
+}
+
+@media (max-width: 1100px) {
+  .moto .moto-ad {
+    flex-direction: column;
+    gap: 21px;
+  }
+}
+@media (max-width: 768px) {
+  .moto {
+    padding-block: 0px 52px;
+  }
+  .moto .moto-ad img {
+    width: 300px;
+  }
+  .moto .clinic-table .label {
+    font-size: 18px;
+  }
+  .moto .moto-ad .moto-ad-content .item p {
+    width: 100%;
+    max-width: 254px;
+  }
+}
+
+/* ----- bottom common parts  ----- */
+
+/* ----- COMPANY  ----- */
+.company {
+  width: 100%;
+  background-color: #fafafa;
+  padding-block: 18px 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.company .top {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 62px;
+}
+.company .top .company-info {
+  width: 100%;
+  max-width: 360px;
+}
+.company .top .company-info .logo img {
+  width: 200px;
+  margin-bottom: 22px;
+}
+.company .top .company-info .address {
+  font-size: 16px;
+  margin-bottom: 17px;
+
+  span {
+    font-weight: 600;
+  }
+}
+.company .top .company-info .tel {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 38px;
+  color: #519bb3;
+  margin-bottom: 28px;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.company .top .company-info .time-table {
+  margin-bottom: 13px;
+}
+.company .top .company-info .work-time-txt {
+  font-size: 18px;
+}
+.company .top .company-map-box {
+  width: 100%;
+  padding-top: 15px;
+}
+.company .top .company-map {
+  width: 670px;
+  height: 380px;
+  margin-top: 26px;
+}
+.company .video {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 28px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .company .top {
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+  }
+  .company .top .company-info .logo {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .company {
+    padding-block: 18px 0;
+  }
+  .company .top {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .company .top .company-map {
+    width: 100%;
+    height: 290px;
+  }
+  .company .top .company-map-box {
+    padding-top: 0;
+  }
+  .company .video {
+    margin-top: 30px;
+  }
+}
+
+/* ----- BADGES  ----- */
+.badges {
+  width: 100%;
+  padding-block: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+.badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 1050px;
+  margin-top: 31px;
+}
+.badge-group img {
+  width: 340px;
+}
+
+@media (max-width: 1100px) {
+  .badge-group {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .badge-group {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
